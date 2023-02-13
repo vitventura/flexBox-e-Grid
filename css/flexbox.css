@@ -38,12 +38,36 @@
 
 }
 
-@media(max-width:768px){
-.cabecalhoPrincipal-nav {
+.videoSobre .container{
+    display: flex;
+}
+
+.videoSobre-sobre{
+    text-align: center;
     display: flex;
     flex-direction: column;
+    flex-grow: 2;
+}
+
+.videoSobre-sobre-list{
+ flex-grow: 1;
+}
+
+.videoSobre-video{
+  flex-grow: 1;
+  flex-shrink: 2;
+}
+@media(max-width:768px){
+    .cabecalhoPrincipal .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+.cabecalhoPrincipal-nav {
+    display: flex;
+    flex-direction: column-reverse;
     height: 100%;
-    width: 100%;
+   width: 100%;
     text-align: center;
 }
 
@@ -63,7 +87,7 @@
 .rodapePrincipal-patrocinadores-list{
     margin: 0;
     width: 100%;
-    
+    gap: 5px;
 }
 
 .rodapePrincipal-contatoForm{
@@ -73,6 +97,15 @@
 
 .rodapePrincipal-contatoForm-fieldset{
    justify-content: center;
-  
+   display: flex;
+}
+
+.videoSobre-video{
+   margin: 0 auto;
+    
+}
+
+.videoSobre .container{
+    flex-direction: column;
 }
 }
